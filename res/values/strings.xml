@@ -25,6 +25,7 @@
     <string name="content_desc_jupiter">Planet Jupiter</string>
     <string name="content_desc_saturn">Planet Saturn</string>
     <string name="content_desc_neptune">Planet Neptune</string>
+    <string name="content_desc_exit">Exit to Home Planet</string>
     
     <string name="button_name_colonies">Add Colonies</string>
     <string name="button_name_colonists">Add Colonists</string>
@@ -32,6 +33,8 @@
     <string name="button_name_military">Add Military</string>
     <string name="button_name_ffon">Forcefield On</string>
     <string name="button_name_ffoff">Forcefield Off</string>
+    <string name="button_name_done">Done</string>
+    <string name="button_name_return">Return Home</string>
     
     <string name="content_desc_bomb">Bomb the Planet</string>
     <string name="content_desc_invade">Invade the Planet</string>
