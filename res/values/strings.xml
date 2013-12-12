@@ -35,10 +35,20 @@
     <string name="button_name_ffoff">Forcefield Off</string>
     <string name="button_name_done">Done</string>
     <string name="button_name_return">Return Home</string>
+    <string name="button_name_done_add">All Done!</string>
     
     <string name="content_desc_bomb">Bomb the Planet</string>
     <string name="content_desc_invade">Invade the Planet</string>
     <string name="content_desc_virus">Infect Planet with Virus</string>
     <string name="content_desc_laser">Fire laser atPlanet</string>
+    
+    <string name="add_planet_caption">Click Planet to Add</string>
+    
+    <string name="attack_planet_caption">Select Attack Type Using Icon</string>
+    <string name="attack_planet_bomb">Bomb a Planet</string>
+    <string name="attack_planet_invade">Invade a Planet</string>
+    <string name="attack_planet_infect">Infect a Planet</string>
+    <string name="attack_planet_laser">Shoot a Laser</string>
+    <string name="attack_planet_exit">Exit Attack Mode</string>
 
 </resources>

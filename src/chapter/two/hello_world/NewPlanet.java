@@ -4,7 +4,9 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class NewPlanet extends Activity {
 	
@@ -12,6 +14,15 @@ public class NewPlanet extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_add);
+		Button doneButton = (Button)findViewById(R.id.doneAddingButton);
+		doneButton.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				finish(); 
+			}
+		});
+		
 		ImageView marsImage = (ImageView)findViewById(R.id.imageMars);
 		marsImage.setOnClickListener(new View.OnClickListener() {
 			
@@ -19,7 +30,7 @@ public class NewPlanet extends Activity {
 			public void onClick(View v) {
 				WorldGen mars = new WorldGen("Mars", 642, 3.7);
 				mars.setPlanetColonies(1);
-				finish();
+				Toast.makeText(NewPlanet.this, "Mars Created!", Toast.LENGTH_SHORT).show();
 			}
 		});
 	}
