@@ -3,8 +3,10 @@ package chapter.two.hello_world;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
@@ -17,6 +19,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		setStartUpWorldValues();
 		setStartUpScreenText();
+		setStartUpScreenAnim();
 	}
 	
 	protected void setStartUpWorldValues() {
@@ -25,6 +28,12 @@ public class MainActivity extends Activity {
 		earth.setColonyImmigration(1000);
 		earth.setBaseProtection(100);
 		earth.turnForceFieldOn();		
+	}
+	
+	private void setStartUpScreenAnim() {
+		ImageView homePlanet = (ImageView)findViewById(R.id.imageEarth);
+		AnimationDrawable forceFieldAnimation = (AnimationDrawable)homePlanet.getBackground();
+		forceFieldAnimation.start();
 	}
 	
 	private void setStartUpScreenText() {

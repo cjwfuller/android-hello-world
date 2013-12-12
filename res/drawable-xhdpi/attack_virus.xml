@@ -6,6 +6,8 @@
     <item 
         android:state_focused="true"
         android:drawable="@drawable/attackvirusfocus" />
-    <item android:drawable="@drawable/attackvirus" />
+    <item 
+        android:drawable="@drawable/anim_virus" 
+        android:state_enabled="true" />
 
 </selector>
