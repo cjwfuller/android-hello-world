@@ -22,10 +22,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="chapter.two.hello_world.NewPlanet" />
-        <activity android:name="chapter.two.hello_world.ConfigPlanet" />
-        <activity android:name="chapter.two.hello_world.TravelPlanet" />
-        <activity android:name="chapter.two.hello_world.AttackPlanet" />
+        <activity 
+            android:name="chapter.two.hello_world.NewPlanet"
+            android:label="@string/activity_title_new_planet" />
+        <activity 
+            android:name="chapter.two.hello_world.ConfigPlanet"
+            android:label="@string/activity_title_config_planet" />
+        <activity 
+            android:name="chapter.two.hello_world.TravelPlanet" 
+            android:label="@string/activity_title_travel_planet"/>
+        <activity 
+            android:name="chapter.two.hello_world.AttackPlanet"
+            android:label="@string/activity_title_attack_planet" />
     </application>
 
 </manifest>
