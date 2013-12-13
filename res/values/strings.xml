@@ -47,6 +47,7 @@
     <string name="content_desc_laser">Fire laser atPlanet</string>
     
     <string name="add_planet_caption">Click Planet to Add</string>
+    <string name="travel_button_caption">Return to Home Screen</string>
     
     <string name="attack_planet_caption">Select Attack Type Using Icon</string>
     <string name="attack_planet_bomb">Bomb a Planet</string>
