@@ -1,11 +1,13 @@
 package chapter.two.hello_world;
 
 import android.app.Activity;
+import android.graphics.drawable.TransitionDrawable;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 public class NewPlanet extends Activity {
@@ -14,6 +16,13 @@ public class NewPlanet extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_add);
+		
+		final TransitionDrawable trans = 
+				(TransitionDrawable)getResources().getDrawable(R.drawable.tran_stars_galaxy);
+		RelativeLayout newPlanetScreen = (RelativeLayout)findViewById(R.id.new_planet_screen);
+		newPlanetScreen.setBackground(trans);
+		trans.startTransition(5000);
+		
 		Button doneButton = (Button)findViewById(R.id.doneAddingButton);
 		doneButton.setOnClickListener(new View.OnClickListener() {
 			
