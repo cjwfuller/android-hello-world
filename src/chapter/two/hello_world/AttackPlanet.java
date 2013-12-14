@@ -1,7 +1,5 @@
 package chapter.two.hello_world;
 
-import java.util.HashMap;
-
 import android.app.Activity;
 import android.content.Context;
 import android.media.AudioManager;

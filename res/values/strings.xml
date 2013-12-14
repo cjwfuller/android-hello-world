@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="app_name">Hello World</string>
     <string name="activity_title_new_planet">Hello World - Create a Planet</string>
     <string name="activity_title_config_planet">Hello World - Configure Planet</string>
@@ -16,13 +15,11 @@
     <string name="planet_military_label">Planet Military: </string>
     <string name="planet_bases_label">Planet Bases: </string>
     <string name="planet_forcefield_label">Planet Forcefield: </string>
-    
     <string name="menu_add_planet">Add New Planet</string>
     <string name="menu_config_planet">Configure Planet</string>
     <string name="menu_travel_planet">Travel to Planet</string>
     <string name="menu_attack_planet">Attack on Planet</string>
     <string name="menu_home_planet">Show Home Planet</string>
-    
     <string name="content_desc_earth">Planet Earth</string>
     <string name="content_desc_mars">Planet Mars</string>
     <string name="content_desc_venus">Planet Venus</string>
@@ -30,7 +27,6 @@
     <string name="content_desc_saturn">Planet Saturn</string>
     <string name="content_desc_neptune">Planet Neptune</string>
     <string name="content_desc_exit">Exit to Home Planet</string>
-    
     <string name="button_name_colonies">Add Colonies</string>
     <string name="button_name_colonists">Add Colonists</string>
     <string name="button_name_bases">Add Bases</string>
@@ -40,20 +36,20 @@
     <string name="button_name_done">Done</string>
     <string name="button_name_return">Return Home</string>
     <string name="button_name_done_add">All Done!</string>
-    
+    <string name="button_name_time">Atomic Clock</string>
     <string name="content_desc_bomb">Bomb the Planet</string>
     <string name="content_desc_invade">Invade the Planet</string>
     <string name="content_desc_virus">Infect Planet with Virus</string>
     <string name="content_desc_laser">Fire laser atPlanet</string>
-    
     <string name="add_planet_caption">Click Planet to Add</string>
     <string name="travel_button_caption">Return to Home Screen</string>
-    
     <string name="attack_planet_caption">Select Attack Type Using Icon</string>
     <string name="attack_planet_bomb">Bomb a Planet</string>
     <string name="attack_planet_invade">Invade a Planet</string>
     <string name="attack_planet_infect">Infect a Planet</string>
     <string name="attack_planet_laser">Shoot a Laser</string>
     <string name="attack_planet_exit">Exit Attack Mode</string>
-
+    <string name="time_caption_value">Home Planet Earth Time</string>
+    <string name="time_button_value">Return to Planet Configuration</string>
+    <string name="activity_title_time_planet">Hello World - Planet Earth Time</string>
 </resources>

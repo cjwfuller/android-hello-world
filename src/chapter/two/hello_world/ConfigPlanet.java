@@ -1,6 +1,7 @@
 package chapter.two.hello_world;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -43,6 +44,15 @@ public class ConfigPlanet extends Activity {
 			public void onClick(View v) { 
 				clickPlayer.start();
 				finish(); 
+			}
+		});
+		
+		Button timeButton = (Button)findViewById(R.id.timeButton);
+		timeButton.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) { 
+				Intent callTimeIntent = new Intent(v.getContext(), TimePlanet.class); 
+				startActivityForResult(callTimeIntent, 0);
 			}
 		});
 		

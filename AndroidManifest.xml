@@ -34,6 +34,9 @@
         <activity 
             android:name="chapter.two.hello_world.AttackPlanet"
             android:label="@string/activity_title_attack_planet" />
+        <activity 
+            android:name="chapter.two.hello_world.TimePlanet"
+            android:label="@string/activity_title_time_planet" />        
     </application>
 
 </manifest>

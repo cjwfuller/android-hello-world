@@ -33,7 +33,7 @@ public class TravelPlanet extends Activity {
 				Toast.makeText(TravelPlanet.this, "Going Home", Toast.LENGTH_SHORT).show();
 				finish();
 			}
-		});
+		});		
 	}
 	
 	public boolean onKeyDown(int keyCode, KeyEvent event) {

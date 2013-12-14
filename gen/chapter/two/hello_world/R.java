@@ -96,18 +96,19 @@ public final class R {
     }
     public static final class id {
         public static final int addPlanetText=0x7f0a0001;
+        public static final int analogClock1=0x7f0a002d;
         public static final int basesButton=0x7f0a0010;
         public static final int bombButton=0x7f0a0009;
         public static final int coloniesButton=0x7f0a000e;
         public static final int colonistsButton=0x7f0a000f;
-        public static final int dataView1=0x7f0a001c;
-        public static final int dataView2=0x7f0a001e;
-        public static final int dataView3=0x7f0a0020;
-        public static final int dataView4=0x7f0a0022;
-        public static final int dataView5=0x7f0a0024;
-        public static final int dataView6=0x7f0a0026;
-        public static final int dataView7=0x7f0a0028;
-        public static final int dataView8=0x7f0a002a;
+        public static final int dataView1=0x7f0a001d;
+        public static final int dataView2=0x7f0a001f;
+        public static final int dataView3=0x7f0a0021;
+        public static final int dataView4=0x7f0a0023;
+        public static final int dataView5=0x7f0a0025;
+        public static final int dataView6=0x7f0a0027;
+        public static final int dataView7=0x7f0a0029;
+        public static final int dataView8=0x7f0a002b;
         public static final int doneAddingButton=0x7f0a0002;
         public static final int doneButton=0x7f0a0014;
         public static final int editTextBases=0x7f0a0017;
@@ -128,30 +129,33 @@ public final class R {
         public static final int infectButton=0x7f0a000b;
         public static final int invadeButton=0x7f0a000a;
         public static final int laserButton=0x7f0a000c;
-        public static final int menu_add=0x7f0a002d;
-        public static final int menu_attack=0x7f0a0030;
-        public static final int menu_config=0x7f0a002e;
-        public static final int menu_home=0x7f0a0031;
-        public static final int menu_travel=0x7f0a002f;
+        public static final int menu_add=0x7f0a0030;
+        public static final int menu_attack=0x7f0a0033;
+        public static final int menu_config=0x7f0a0031;
+        public static final int menu_home=0x7f0a0034;
+        public static final int menu_travel=0x7f0a0032;
         public static final int militaryButton=0x7f0a0011;
         public static final int new_planet_screen=0x7f0a0000;
-        public static final int textView1=0x7f0a001b;
-        public static final int textView2=0x7f0a001d;
-        public static final int textView3=0x7f0a001f;
-        public static final int textView4=0x7f0a0021;
-        public static final int textView5=0x7f0a0023;
-        public static final int textView6=0x7f0a0025;
-        public static final int textView7=0x7f0a0027;
-        public static final int textView8=0x7f0a0029;
-        public static final int travelButton=0x7f0a002c;
-        public static final int travelVideoView=0x7f0a002b;
+        public static final int textView1=0x7f0a001c;
+        public static final int textView2=0x7f0a001e;
+        public static final int textView3=0x7f0a0020;
+        public static final int textView4=0x7f0a0022;
+        public static final int textView5=0x7f0a0024;
+        public static final int textView6=0x7f0a0026;
+        public static final int textView7=0x7f0a0028;
+        public static final int textView8=0x7f0a002a;
+        public static final int timeButton=0x7f0a001b;
+        public static final int timePlanetScreen=0x7f0a002c;
+        public static final int travelButton=0x7f0a002f;
+        public static final int travelVideoView=0x7f0a002e;
     }
     public static final class layout {
         public static final int activity_add=0x7f030000;
         public static final int activity_attack=0x7f030001;
         public static final int activity_config=0x7f030002;
         public static final int activity_main=0x7f030003;
-        public static final int activity_travel=0x7f030004;
+        public static final int activity_time=0x7f030004;
+        public static final int activity_travel=0x7f030005;
     }
     public static final class menu {
         public static final int activity_main=0x7f090000;
@@ -178,15 +182,16 @@ public final class R {
         public static final int activity_title_attack_planet=0x7f070004;
         public static final int activity_title_config_planet=0x7f070002;
         public static final int activity_title_new_planet=0x7f070001;
+        public static final int activity_title_time_planet=0x7f070033;
         public static final int activity_title_travel_planet=0x7f070003;
-        public static final int add_planet_caption=0x7f070028;
+        public static final int add_planet_caption=0x7f070029;
         public static final int app_name=0x7f070000;
-        public static final int attack_planet_bomb=0x7f07002b;
-        public static final int attack_planet_caption=0x7f07002a;
-        public static final int attack_planet_exit=0x7f07002f;
-        public static final int attack_planet_infect=0x7f07002d;
-        public static final int attack_planet_invade=0x7f07002c;
-        public static final int attack_planet_laser=0x7f07002e;
+        public static final int attack_planet_bomb=0x7f07002c;
+        public static final int attack_planet_caption=0x7f07002b;
+        public static final int attack_planet_exit=0x7f070030;
+        public static final int attack_planet_infect=0x7f07002e;
+        public static final int attack_planet_invade=0x7f07002d;
+        public static final int attack_planet_laser=0x7f07002f;
         public static final int button_name_bases=0x7f07001d;
         public static final int button_name_colonies=0x7f07001b;
         public static final int button_name_colonists=0x7f07001c;
@@ -196,17 +201,18 @@ public final class R {
         public static final int button_name_ffon=0x7f07001f;
         public static final int button_name_military=0x7f07001e;
         public static final int button_name_return=0x7f070022;
-        public static final int content_desc_bomb=0x7f070024;
+        public static final int button_name_time=0x7f070024;
+        public static final int content_desc_bomb=0x7f070025;
         public static final int content_desc_earth=0x7f070014;
         public static final int content_desc_exit=0x7f07001a;
-        public static final int content_desc_invade=0x7f070025;
+        public static final int content_desc_invade=0x7f070026;
         public static final int content_desc_jupiter=0x7f070017;
-        public static final int content_desc_laser=0x7f070027;
+        public static final int content_desc_laser=0x7f070028;
         public static final int content_desc_mars=0x7f070015;
         public static final int content_desc_neptune=0x7f070019;
         public static final int content_desc_saturn=0x7f070018;
         public static final int content_desc_venus=0x7f070016;
-        public static final int content_desc_virus=0x7f070026;
+        public static final int content_desc_virus=0x7f070027;
         public static final int hello_world=0x7f070006;
         public static final int menu_add_planet=0x7f07000f;
         public static final int menu_attack_planet=0x7f070012;
@@ -221,7 +227,9 @@ public final class R {
         public static final int planet_military_label=0x7f07000c;
         public static final int planet_name_label=0x7f070007;
         public static final int planet_population_label=0x7f07000b;
-        public static final int travel_button_caption=0x7f070029;
+        public static final int time_button_value=0x7f070032;
+        public static final int time_caption_value=0x7f070031;
+        public static final int travel_button_caption=0x7f07002a;
     }
     public static final class style {
         /** 
