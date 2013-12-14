@@ -1,6 +1,7 @@
 package chapter.two.hello_world;
 
 import android.app.Activity;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
@@ -9,10 +10,14 @@ import android.widget.EditText;
 
 public class ConfigPlanet extends Activity {
 	
+	private MediaPlayer clickPlayer = null;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_config);
+		
+		clickPlayer = MediaPlayer.create(getApplicationContext(), R.raw.click);
 		
 		EditText colonyText = (EditText)findViewById(R.id.editTextColonies);
 		colonyText.setText("1", EditText.BufferType.EDITABLE);
@@ -35,43 +40,64 @@ public class ConfigPlanet extends Activity {
 		Button doneButton = (Button)findViewById(R.id.doneButton);
 		doneButton.setOnClickListener(new View.OnClickListener() {
 			@Override
-			public void onClick(View v) { finish(); }
+			public void onClick(View v) { 
+				clickPlayer.start();
+				finish(); 
+			}
 		});
 		
 		Button colonyButton = (Button)findViewById(R.id.coloniesButton);
 		colonyButton.setOnClickListener(new View.OnClickListener() {
 			@Override
-			public void onClick(View v) { finish(); }
+			public void onClick(View v) { 
+				clickPlayer.start();
+				finish(); 
+			}
 		});
 		
 		Button baseButton = (Button)findViewById(R.id.basesButton);
 		baseButton.setOnClickListener(new View.OnClickListener() {
 			@Override
-			public void onClick(View v) { finish(); }
+			public void onClick(View v) { 
+				clickPlayer.start();
+				finish(); 
+			}
 		});
 		
 		Button colonistButton = (Button)findViewById(R.id.colonistsButton);
 		colonistButton.setOnClickListener(new View.OnClickListener() {
 			@Override
-			public void onClick(View v) { finish(); }
+			public void onClick(View v) { 
+				clickPlayer.start();
+				finish(); 
+			}
 		});	
 		
 		Button militaryButton = (Button)findViewById(R.id.militaryButton);
 		militaryButton.setOnClickListener(new View.OnClickListener() {
 			@Override
-			public void onClick(View v) { finish(); }
+			public void onClick(View v) { 
+				clickPlayer.start();
+				finish(); 
+			}
 		});		
 		
 		Button forceFieldOnButton = (Button)findViewById(R.id.ffonButton);
 		forceFieldOnButton.setOnClickListener(new View.OnClickListener() {
 			@Override
-			public void onClick(View v) { finish(); }
+			public void onClick(View v) { 
+				clickPlayer.start();
+				finish(); 
+			}
 		});		
 		
 		Button forceFieldOffButton = (Button)findViewById(R.id.ffoffButton);
 		forceFieldOffButton.setOnClickListener(new View.OnClickListener() {
 			@Override
-			public void onClick(View v) { finish(); }
+			public void onClick(View v) { 
+				clickPlayer.start();
+				finish(); 
+			}
 		});
 	}
 	

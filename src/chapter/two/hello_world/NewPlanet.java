@@ -2,6 +2,7 @@ package chapter.two.hello_world;
 
 import android.app.Activity;
 import android.graphics.drawable.TransitionDrawable;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
@@ -11,6 +12,8 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 public class NewPlanet extends Activity {
+	
+	private MediaPlayer marsPlayer = null;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +36,7 @@ public class NewPlanet extends Activity {
 		});
 		
 		ImageView marsImage = (ImageView)findViewById(R.id.imageMars);
+		marsPlayer = MediaPlayer.create(this, R.raw.mars);
 		marsImage.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
@@ -40,6 +44,7 @@ public class NewPlanet extends Activity {
 				WorldGen mars = new WorldGen("Mars", 642, 3.7);
 				mars.setPlanetColonies(1);
 				Toast.makeText(NewPlanet.this, "Mars Created!", Toast.LENGTH_SHORT).show();
+				marsPlayer.start();
 			}
 		});
 	}

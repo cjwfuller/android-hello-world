@@ -1,5 +1,6 @@
 package chapter.two.hello_world;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -20,6 +21,13 @@ public class MainActivity extends Activity {
 		setStartUpWorldValues();
 		setStartUpScreenText();
 		setStartUpScreenAnim();
+		setStartUpScreenAudio();
+	}
+	
+	private void setStartUpScreenAudio() {
+		MediaPlayer audioPlayer = MediaPlayer.create(getApplicationContext(), R.raw.ambient);
+		audioPlayer.setLooping(true);
+		audioPlayer.start();
 	}
 	
 	protected void setStartUpWorldValues() {

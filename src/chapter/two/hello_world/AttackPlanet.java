@@ -1,6 +1,7 @@
 package chapter.two.hello_world;
 
 import android.app.Activity;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
@@ -11,10 +12,23 @@ import android.widget.Toast;
 
 public class AttackPlanet extends Activity {
 	
+	private MediaPlayer bombPlayer = null;
+	private MediaPlayer transportPlayer = null;
+	private MediaPlayer virusPlayer = null;
+	private MediaPlayer laserPlayer = null;
+	
+	private void setAudioPlayers() {
+		bombPlayer = MediaPlayer.create(getApplicationContext(), R.raw.blast);
+		transportPlayer = MediaPlayer.create(getApplicationContext(), R.raw.transport);
+		virusPlayer = MediaPlayer.create(getApplicationContext(), R.raw.virus);
+		laserPlayer = MediaPlayer.create(getApplicationContext(), R.raw.laser);
+	}
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_attack);
+		setAudioPlayers();
 		ImageButton exitButton = (ImageButton)findViewById(R.id.exitButton);
 		exitButton.setOnClickListener(new View.OnClickListener() {
 			
@@ -32,6 +46,7 @@ public class AttackPlanet extends Activity {
 			@Override
 			public void onClick(View v) {
 				Toast.makeText(AttackPlanet.this, "Bombs Away!", Toast.LENGTH_SHORT).show();
+				bombPlayer.start();
 			}
 		});
 		
@@ -43,6 +58,7 @@ public class AttackPlanet extends Activity {
 			@Override
 			public void onClick(View v) {
 				Toast.makeText(AttackPlanet.this, "Troops Sent", Toast.LENGTH_SHORT).show();
+				transportPlayer.start();
 			}
 		});
 		
@@ -54,6 +70,7 @@ public class AttackPlanet extends Activity {
 			@Override
 			public void onClick(View v) {
 				Toast.makeText(AttackPlanet.this, "Virus Spread", Toast.LENGTH_SHORT).show();
+				virusPlayer.start();
 			}
 		});
 		
@@ -65,6 +82,7 @@ public class AttackPlanet extends Activity {
 			@Override
 			public void onClick(View v) {
 				Toast.makeText(AttackPlanet.this, "Laser Fired!", Toast.LENGTH_SHORT).show();
+				laserPlayer.start();
 			}
 		});
 	}
