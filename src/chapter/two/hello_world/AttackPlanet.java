@@ -1,8 +1,13 @@
 package chapter.two.hello_world;
 
+import java.util.HashMap;
+
 import android.app.Activity;
-import android.media.MediaPlayer;
+import android.content.Context;
+import android.media.AudioManager;
+import android.media.SoundPool;
 import android.os.Bundle;
+import android.util.SparseIntArray;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.animation.Animation;
@@ -12,23 +17,31 @@ import android.widget.Toast;
 
 public class AttackPlanet extends Activity {
 	
-	private MediaPlayer bombPlayer = null;
-	private MediaPlayer transportPlayer = null;
-	private MediaPlayer virusPlayer = null;
-	private MediaPlayer laserPlayer = null;
+	private SoundPool soundPoolFX;
+	private SparseIntArray soundPoolMap;
+	int sample1 = 1;
+	int sample2 = 2;
+	int sample3 = 3;
+	int sample4 = 4;
 	
-	private void setAudioPlayers() {
-		bombPlayer = MediaPlayer.create(getApplicationContext(), R.raw.blast);
-		transportPlayer = MediaPlayer.create(getApplicationContext(), R.raw.transport);
-		virusPlayer = MediaPlayer.create(getApplicationContext(), R.raw.virus);
-		laserPlayer = MediaPlayer.create(getApplicationContext(), R.raw.laser);
+	public void playSample(int sample, float pitchShift) {
+		AudioManager manageAudio = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
+		float curSampleVolume = manageAudio.getStreamVolume(AudioManager.STREAM_MUSIC);
+		float maxSampleVolume = manageAudio.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
+		float setSampleVolume = curSampleVolume / maxSampleVolume;
+		soundPoolFX.play(soundPoolMap.get(sample), setSampleVolume, setSampleVolume, 0, 0, pitchShift);
 	}
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_attack);
-		setAudioPlayers();
+		soundPoolFX = new SoundPool(4, AudioManager.STREAM_MUSIC, 100);
+		soundPoolMap = new SparseIntArray(4);
+		soundPoolMap.append(sample1, soundPoolFX.load(this, R.raw.blast, 1));
+		soundPoolMap.append(sample2, soundPoolFX.load(this, R.raw.transport, 1));
+		soundPoolMap.append(sample3, soundPoolFX.load(this, R.raw.virus, 1));
+		soundPoolMap.append(sample4, soundPoolFX.load(this, R.raw.laser, 1));
 		ImageButton exitButton = (ImageButton)findViewById(R.id.exitButton);
 		exitButton.setOnClickListener(new View.OnClickListener() {
 			
@@ -46,7 +59,7 @@ public class AttackPlanet extends Activity {
 			@Override
 			public void onClick(View v) {
 				Toast.makeText(AttackPlanet.this, "Bombs Away!", Toast.LENGTH_SHORT).show();
-				bombPlayer.start();
+				playSample(sample1, 1.0f);
 			}
 		});
 		
@@ -58,7 +71,7 @@ public class AttackPlanet extends Activity {
 			@Override
 			public void onClick(View v) {
 				Toast.makeText(AttackPlanet.this, "Troops Sent", Toast.LENGTH_SHORT).show();
-				transportPlayer.start();
+				playSample(sample2, 1.0f);
 			}
 		});
 		
@@ -70,7 +83,7 @@ public class AttackPlanet extends Activity {
 			@Override
 			public void onClick(View v) {
 				Toast.makeText(AttackPlanet.this, "Virus Spread", Toast.LENGTH_SHORT).show();
-				virusPlayer.start();
+				playSample(sample3, 1.0f);
 			}
 		});
 		
@@ -82,7 +95,7 @@ public class AttackPlanet extends Activity {
 			@Override
 			public void onClick(View v) {
 				Toast.makeText(AttackPlanet.this, "Laser Fired!", Toast.LENGTH_SHORT).show();
-				laserPlayer.start();
+				playSample(sample4, 1.0f);
 			}
 		});
 	}
