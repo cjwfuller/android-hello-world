@@ -52,4 +52,6 @@
     <string name="time_caption_value">Home Planet Earth Time</string>
     <string name="time_button_value">Return to Planet Configuration</string>
     <string name="activity_title_time_planet">Hello World - Planet Earth Time</string>
+    <string name="start_button_value">Start Music Service</string>
+    <string name="stop_button_value">Stop Music Service</string>
 </resources>

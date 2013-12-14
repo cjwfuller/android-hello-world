@@ -227,6 +227,8 @@ public final class R {
         public static final int planet_military_label=0x7f07000c;
         public static final int planet_name_label=0x7f070007;
         public static final int planet_population_label=0x7f07000b;
+        public static final int start_button_value=0x7f070034;
+        public static final int stop_button_value=0x7f070035;
         public static final int time_button_value=0x7f070032;
         public static final int time_caption_value=0x7f070031;
         public static final int travel_button_caption=0x7f07002a;
