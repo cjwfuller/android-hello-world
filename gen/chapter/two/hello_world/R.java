@@ -129,15 +129,17 @@ public final class R {
         public static final int infectButton=0x7f0a000b;
         public static final int invadeButton=0x7f0a000a;
         public static final int laserButton=0x7f0a000c;
-        public static final int menu_add=0x7f0a0032;
-        public static final int menu_attack=0x7f0a0035;
-        public static final int menu_config=0x7f0a0033;
-        public static final int menu_home=0x7f0a0036;
-        public static final int menu_travel=0x7f0a0034;
+        public static final int menu_add=0x7f0a0034;
+        public static final int menu_attack=0x7f0a0037;
+        public static final int menu_config=0x7f0a0035;
+        public static final int menu_home=0x7f0a0038;
+        public static final int menu_travel=0x7f0a0036;
         public static final int militaryButton=0x7f0a0011;
         public static final int new_planet_screen=0x7f0a0000;
-        public static final int startServiceButton=0x7f0a002e;
-        public static final int stopServiceButton=0x7f0a002f;
+        public static final int setAlarm=0x7f0a002e;
+        public static final int startCounter=0x7f0a002f;
+        public static final int startServiceButton=0x7f0a0030;
+        public static final int stopServiceButton=0x7f0a0031;
         public static final int textView1=0x7f0a001c;
         public static final int textView2=0x7f0a001e;
         public static final int textView3=0x7f0a0020;
@@ -148,8 +150,8 @@ public final class R {
         public static final int textView8=0x7f0a002a;
         public static final int timeButton=0x7f0a001b;
         public static final int timePlanetScreen=0x7f0a002c;
-        public static final int travelButton=0x7f0a0031;
-        public static final int travelVideoView=0x7f0a0030;
+        public static final int travelButton=0x7f0a0033;
+        public static final int travelVideoView=0x7f0a0032;
     }
     public static final class layout {
         public static final int activity_add=0x7f030000;
@@ -233,6 +235,8 @@ public final class R {
         public static final int stop_button_value=0x7f070035;
         public static final int time_button_value=0x7f070032;
         public static final int time_caption_value=0x7f070031;
+        public static final int timer_button_value=0x7f070037;
+        public static final int timer_hint_value=0x7f070036;
         public static final int travel_button_caption=0x7f07002a;
     }
     public static final class style {

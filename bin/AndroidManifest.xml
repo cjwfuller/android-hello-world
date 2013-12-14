@@ -39,7 +39,9 @@
             android:label="@string/activity_title_time_planet" />        
         <service 
             android:enabled="true"
-            android:name=".MusicService"></service>
+            android:name=".MusicService" />
+        <receiver 
+            android:name="chapter.two.hello_world.AlarmReceiver" />
     </application>
 
 </manifest>

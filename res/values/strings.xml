@@ -54,4 +54,6 @@
     <string name="activity_title_time_planet">Hello World - Planet Earth Time</string>
     <string name="start_button_value">Start Music Service</string>
     <string name="stop_button_value">Stop Music Service</string>
+    <string name="timer_hint_value">Enter Number of Seconds</string>
+    <string name="timer_button_value">Start Timer Countdown</string>
 </resources>
