@@ -20,6 +20,7 @@
     <string name="menu_travel_planet">Travel to Planet</string>
     <string name="menu_attack_planet">Attack on Planet</string>
     <string name="menu_home_planet">Show Home Planet</string>
+    <string name="menu_contact_planet">Make Alien Contact</string>
     <string name="content_desc_earth">Planet Earth</string>
     <string name="content_desc_mars">Planet Mars</string>
     <string name="content_desc_venus">Planet Venus</string>
@@ -56,4 +57,8 @@
     <string name="stop_button_value">Stop Music Service</string>
     <string name="timer_hint_value">Enter Number of Seconds</string>
     <string name="timer_button_value">Start Timer Countdown</string>
+    <string name="activity_title_alien_contact">Hello World - Alien Contacts</string>
+    <string name="find_alien_button_value">List Aliens in this Galaxy</string>
+    <string name="add_spock_button_value">Add Spock to my Alliance</string>
+    <string name="add_worf_button_value">Add Worf to my Alliance</string>
 </resources>

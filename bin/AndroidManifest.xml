@@ -7,6 +7,8 @@
     <uses-sdk
         android:minSdkVersion="16"
         android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
 
     <application
         android:allowBackup="true"
@@ -36,7 +38,10 @@
             android:label="@string/activity_title_attack_planet" />
         <activity 
             android:name="chapter.two.hello_world.TimePlanet"
-            android:label="@string/activity_title_time_planet" />        
+            android:label="@string/activity_title_time_planet" />       
+        <activity 
+            android:name="chapter.two.hello_world.AlienContact"
+            android:label="@string/activity_title_alien_contact" />
         <service 
             android:enabled="true"
             android:name=".MusicService" />
