@@ -20,6 +20,7 @@ public class TimePlanet extends Activity {
 		LinearLayout timePlanetScreen = (LinearLayout)findViewById(R.id.timePlanetScreen);
 		timePlanetScreen.setBackground(trans);
 		trans.startTransition(5000);
+		
 		Button returnFromTimeButton = (Button)findViewById(R.id.timeButton);
 		returnFromTimeButton.setOnClickListener(new View.OnClickListener() {
 			@Override
@@ -27,6 +28,22 @@ public class TimePlanet extends Activity {
 				Intent returnIntent = new Intent(); 
 				setResult(RESULT_OK, returnIntent);
 				finish();
+			}
+		});
+		
+		Button startMusicServiceButton = (Button)findViewById(R.id.startServiceButton);
+		startMusicServiceButton.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) { 
+				startService(new Intent(TimePlanet.this, MusicService.class));
+			}
+		});
+		
+		Button stopMusicServiceButton = (Button)findViewById(R.id.stopServiceButton);
+		stopMusicServiceButton.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) { 
+				stopService(new Intent(TimePlanet.this, MusicService.class));
 			}
 		});
 	}
